@@ -9,8 +9,8 @@ template_defaults: &defaults
 production:
   adapter: postgresql
   encoding: unicode
-  database: template_prod
-  username: template_prod_user
+  database: life_work_prod
+  username: life_work_prod_user
   password: <%= ENV['RDS_PASSWORD'] %>
   host: <%= ENV['RDS_HOSTNAME'] %>
   port: 5432
@@ -19,17 +19,17 @@ production:
 
 staging:
   <<: *defaults
-  database: template_staging
-  username: template_staging_user
+  database: life_work_staging
+  username: life_work_staging_user
   password: <%= ENV['RDS_PASSWORD'] %>
   host: <%= ENV['RDS_HOSTNAME'] %>
   encoding: utf8
 
 development:
   <<: *defaults
-  database: template_dev
-  username: template_user
+  database: life_work_dev
+  username: life_work_user
 
 test:
   <<: *defaults
-  database: template_test
+  database: life_work_test
