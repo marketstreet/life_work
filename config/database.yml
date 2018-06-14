@@ -28,7 +28,7 @@ staging:
 development:
   <<: *defaults
   database: life_work_dev
-  username: life_work_user
+  #username: life_work_user
 
 test:
   <<: *defaults
