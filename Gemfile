@@ -68,6 +68,7 @@ group :development, :test do
   gem 'faker'
   gem 'letter_opener'
   gem 'spring'
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :development do
